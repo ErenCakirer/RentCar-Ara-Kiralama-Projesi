@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCar-DapperApi", "RentCar-DapperApi.csproj", "{B95E94F1-AC20-42DD-BE75-32354D72C6B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCar-UI", "..\RentCar-UI\RentCar-UI.csproj", "{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95E94F1-AC20-42DD-BE75-32354D72C6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95E94F1-AC20-42DD-BE75-32354D72C6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95E94F1-AC20-42DD-BE75-32354D72C6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95E94F1-AC20-42DD-BE75-32354D72C6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {420FF740-2259-49A2-9AD7-2A3931D9C824}
+	EndGlobalSection
+EndGlobal

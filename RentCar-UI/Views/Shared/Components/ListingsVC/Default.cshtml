@@ -1,0 +1,47 @@
+﻿@model List<RentCar_UI.Dtos.VehicleDtos.ResultVehicleDto>
+
+<section class="w3l-grids-4 py-5">
+    <div class="container py-md-5 py-2">
+        <div id="grids4-block">
+            <div class="title-content text-center">
+                <h6 class="title-subhny text-center">Öne Çıkanlar</h6>
+                <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-0 pb-2 text-center">Kiralık Araç Filomuz</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                @foreach (var item in Model.Take(6))
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="grids4-info" style="display: flex; flex-direction: column; height: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background: #fff;">
+
+                            <div style="width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; background: #f8f9fa; padding: 15px;">
+                                <a href="/Vehicle/VehicleDetail/@item.productID" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-fluid" src="@item.CoverImage" alt="@item.title" style="width: 100%; height: 100%; object-fit: contain;" />
+                                </a>
+                            </div>
+
+                            <div class="info-bg" style="padding: 25px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <h5 style="margin-bottom: 8px;">
+                                    <a href="/Vehicle/VehicleDetail/@item.productID" style="font-weight: 600; font-size: 20px;">@item.title</a>
+                                </h5>
+                                <span class="price" style="font-size: 18px; font-weight: 700; color: #ff5a3c; display: block; margin-bottom: 15px;">@item.price.ToString("N0") ₺ / Gün</span>
+
+                                <p style="font-size: 14px; line-height: 22px; color: #666; margin-bottom: 20px; flex-grow: 1;">
+                                    Lokasyon: @item.city, @item.district <br />
+                                    Bu araç segmentinin en çok tercih edilen modelleri arasında yer almaktadır.
+                                </p>
+
+                                <ul style="display: flex; justify-content: space-between; border-top: 1px solid #eee; padding: 15px 0 0 0; margin: 0; list-style: none;">
+                                    <li style="font-size: 14px; color: #555;"><span class="fa fa-cogs" style="color: #ff5a3c; margin-right: 5px;"></span> Otomatik</li>
+                                    <li style="font-size: 14px; color: #555;"><span class="fa fa-filter" style="color: #ff5a3c; margin-right: 5px;"></span> Dizel</li>
+                                    <li style="font-size: 14px; color: #555;"><span class="fa fa-dashboard" style="color: #ff5a3c; margin-right: 5px;"></span> Aktif</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

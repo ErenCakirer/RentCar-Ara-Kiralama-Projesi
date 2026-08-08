@@ -1,0 +1,65 @@
+﻿@model List<RentCar_UI.Dtos.ServicesDtos.ResultServiceDto>
+
+@{
+    ViewData["Title"] = "Hizmetlerimiz";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0 text-primary" style="font-size: 1.25rem;"><i class="fa fa-concierge-bell me-2"></i>Hizmet Listesi</h6>
+            <a href="/Service/CreateService" class="btn btn-primary"><i class="fa fa-plus me-2"></i>Yeni Hizmet Ekle</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-dark">
+                        <th scope="col" style="width: 80px;">#</th>
+                        <th scope="col">Hizmet Başlığı</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col" style="width: 120px;">Durum</th>
+                        <th scope="col" style="width: 200px; text-align: center;">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ServiceID</td>
+                                <td class="fw-bold text-dark">@item.Title</td>
+                                <td>@item.Description</td>
+                                <td>
+                                    @if (item.Status)
+                                    {
+                                        <span class="badge bg-success">Aktif</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Pasif</span>
+                                    }
+                                </td>
+                                <td class="text-center">
+                                    <a class="btn btn-sm btn-danger me-2" href="/Service/DeleteService/@item.ServiceID">
+                                        <i class="fa fa-trash me-1"></i> Sil
+                                    </a>
+                                    <a class="btn btn-sm btn-warning" href="/Service/UpdateService/@item.ServiceID">
+                                        <i class="fa fa-edit me-1"></i> Güncelle
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center text-muted py-4">Sistemde henüz ekli bir hizmet bulunmuyor.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

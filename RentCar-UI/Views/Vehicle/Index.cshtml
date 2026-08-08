@@ -1,0 +1,94 @@
+﻿@model List<RentCar_UI.Dtos.VehicleDtos.ResultVehicleDto>
+
+@{
+    ViewData["Title"] = "Kiralık Araç Filomuz";
+    Layout = "~/Views/Shared/DefaultLayout.cshtml";
+}
+
+<section class="w3l-portfolio-8 py-5">
+    <div class="portfolio-main py-lg-5 py-md-4 py-2">
+        <div class="container">
+            <div class="title-content text-center mb-5">
+                <h3 class="title-subhny">Araç Filomuz</h3>
+                <h3 class="title-w3l">Tüm Kiralık Araçlarımız</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="card p-4 shadow-sm border-0 rounded" style="background-color: #f8f9fa;">
+                        <h5 class="mb-3 font-weight-bold text-dark"><i class="fa fa-filter mr-2 text-primary"></i>Filtrele</h5>
+                        <form method="get" action="/Vehicle/Index">
+
+                            <div class="form-group mb-3">
+                                <label class="small font-weight-bold text-muted">Yakıt Türü</label>
+                                <select name="fuelType" class="form-control form-control-sm">
+                                    <option value="">Tümü</option>
+                                    <option value="Benzin">Benzin</option>
+                                    <option value="Dizel">Dizel</option>
+                                    <option value="Elektrik">Elektrik</option>
+                                    <option value="Hibrit">Hibrit</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="small font-weight-bold text-muted">Vites Tipi</label>
+                                <select name="transmission" class="form-control form-control-sm">
+                                    <option value="">Tümü</option>
+                                    <option value="Otomatik">Otomatik</option>
+                                    <option value="Manuel">Manuel</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="small font-weight-bold text-muted">Min Fiyat (TL)</label>
+                                <input type="number" name="minPrice" class="form-control form-control-sm" placeholder="Örn: 500" />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="small font-weight-bold text-muted">Max Fiyat (TL)</label>
+                                <input type="number" name="maxPrice" class="form-control form-control-sm" placeholder="Örn: 5000" />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-sm mt-3 font-weight-bold">Filtrele</button>
+                            <a href="/Vehicle/Index" class="btn btn-outline-secondary btn-block btn-sm mt-2">Temizle</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="row">
+                        @if (Model != null && Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="protfolio-item hover14 pr-lg-2">
+                                        <a href="/Vehicle/VehicleDetail/@item.productID">
+                                            <figure>
+                                                <img src="@item.CoverImage" alt="@item.title" class="img-fluid radius-image" style="width:100%; height:250px; object-fit:cover;">
+
+                                                <div class="p-4">
+                                                    <p class="float-right font-weight-bold text-primary">@item.price.ToString("N0") TL / Gün</p>
+
+                                                    <p><span class="fa fa-map-marker-alt mr-1"></span> @item.city, @item.district</p>
+
+                                                    <a href="/Vehicle/VehicleDetail/@item.productID" class="mb-5 img-title">@item.title</a>
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="col-12 text-center">
+                                <p class="alert alert-warning">Aradığınız kriterlere uygun kiralık araç bulunamadı.</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

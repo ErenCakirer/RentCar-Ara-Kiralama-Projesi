@@ -1,0 +1,51 @@
+﻿@model RentCar_UI.Dtos.ServicesDtos.CreateServiceDto
+
+@{
+    ViewData["Title"] = "Yeni Hizmet Ekle";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4 justify-content-center">
+        <div class="col-sm-12 col-xl-8">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0 text-primary" style="font-size: 1.25rem;">
+                        <i class="fa fa-plus-circle me-2"></i>Yeni Hizmet Oluştur
+                    </h6>
+                    <a href="/Service/Index" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-arrow-left me-1"></i> Listeye Dön
+                    </a>
+                </div>
+
+                <form method="post" action="/Service/CreateService">
+                    <div class="mb-3">
+                        <label for="Title" class="form-label text-dark fw-bold">Hizmet Başlığı</label>
+                        <input type="text" class="form-control" id="Title" name="Title" placeholder="Örn: 7/24 Yol Yardım Hizmeti" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Description" class="form-label text-dark fw-bold">Açıklama</label>
+                        <textarea class="form-control" id="Description" name="Description" rows="4" placeholder="Hizmet detaylarını buraya yazın..." required></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label text-dark fw-bold d-block">Yayın Durumu</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Status" id="statusActive" value="true" checked>
+                            <label class="form-check-input-label text-success fw-bold" for="statusActive">Aktif (Yayında)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Status" id="statusPassive" value="false">
+                            <label class="form-check-input-label text-danger fw-bold" for="statusPassive">Pasif (Gizli)</label>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary py-3">
+                            <i class="fa fa-save me-2"></i>Hizmeti Kaydet
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

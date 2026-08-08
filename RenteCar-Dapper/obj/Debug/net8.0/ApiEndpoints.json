@@ -1,0 +1,549 @@
+[
+  {
+    "ContainingType": "RentCar_UI.Controllers.AdminVehicleController",
+    "Method": "DeleteVehicle",
+    "RelativePath": "AdminVehicle/DeleteVehicle/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.AboutController",
+    "Method": "AboutList",
+    "RelativePath": "api/About",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.AboutController",
+    "Method": "UpdateAbout",
+    "RelativePath": "api/About",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAboutDto",
+        "Type": "RenteCar_Dapper.Dtos.AboutDtos.UpdateAboutDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.AboutController",
+    "Method": "GetAbout",
+    "RelativePath": "api/About/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CategoriesController",
+    "Method": "CategoryList",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CategoriesController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCategoryDto",
+        "Type": "RenteCar_Dapper.Dtos.CategoryDtos.CreateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CategoriesController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateCategoryDto",
+        "Type": "RenteCar_Dapper.Dtos.CategoryDtos.UpdateCategoryDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CategoriesController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ContactController",
+    "Method": "GetLast4Contact",
+    "RelativePath": "api/Contact/GetLast4Contact",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.CreateTokenController",
+    "Method": "CreateToken",
+    "RelativePath": "api/CreateToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RenteCar_Dapper.Tools.CheckAppUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.LoginController",
+    "Method": "SignIn",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "RenteCar_Dapper.Dtos.LoginDtos.CreateLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ServiceController",
+    "Method": "ServiceList",
+    "RelativePath": "api/Service",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ServiceController",
+    "Method": "CreateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createServiceDto",
+        "Type": "RenteCar_Dapper.Dtos.ServiceDtos.CreateServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ServiceController",
+    "Method": "UpdateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateServiceDto",
+        "Type": "RenteCar_Dapper.Dtos.ServiceDtos.UpdateServiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ServiceController",
+    "Method": "GetServiceById",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ServiceController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "ActiveCategoryCount",
+    "RelativePath": "api/Statistics/ActiveCategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "AveragePrice",
+    "RelativePath": "api/Statistics/AveragePrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "CategoryCount",
+    "RelativePath": "api/Statistics/CategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "ClientCount",
+    "RelativePath": "api/Statistics/ClientCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "DifferentCityCount",
+    "RelativePath": "api/Statistics/DifferentCityCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetAverageVehicleCountPerCategory",
+    "RelativePath": "api/Statistics/GetAverageVehicleCountPerCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetCheapestVehicleName",
+    "RelativePath": "api/Statistics/GetCheapestVehicleName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetCityWithMostVehicles",
+    "RelativePath": "api/Statistics/GetCityWithMostVehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetIdOfCategoryWithMostVehicles",
+    "RelativePath": "api/Statistics/GetIdOfCategoryWithMostVehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetLatestVehicle",
+    "RelativePath": "api/Statistics/GetLatestVehicle",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetMostExpensiveVehicleName",
+    "RelativePath": "api/Statistics/GetMostExpensiveVehicleName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetPriceGapBetweenMaxAndMin",
+    "RelativePath": "api/Statistics/GetPriceGapBetweenMaxAndMin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetTopVehicleBrand",
+    "RelativePath": "api/Statistics/GetTopVehicleBrand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "GetVehicleCountAboveAveragePrice",
+    "RelativePath": "api/Statistics/GetVehicleCountAboveAveragePrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "PassiveCategoryCount",
+    "RelativePath": "api/Statistics/PassiveCategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "TestimonialCount",
+    "RelativePath": "api/Statistics/TestimonialCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.StatisticsController",
+    "Method": "VehicleCount",
+    "RelativePath": "api/Statistics/VehicleCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.TestimonialController",
+    "Method": "TestimonialList",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.ToDoListsController",
+    "Method": "ToDoListList",
+    "RelativePath": "api/ToDoLists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "VehicleList",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "CreateVehicle",
+    "RelativePath": "api/Vehicles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createVehicleDto",
+        "Type": "RenteCar_Dapper.Dtos.VehicleDtos.CreateVehicleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "GetFilteredVehicles",
+    "RelativePath": "api/Vehicles/GetFilteredVehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BrandID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fuelType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Transmission",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "GetLast5Vehicles",
+    "RelativePath": "api/Vehicles/GetLast5Vehicles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "GetVehicleDetailByVehicleId",
+    "RelativePath": "api/Vehicles/GetVehicleDetailByVehicleId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RenteCar_Dapper.Controllers.VehiclesController",
+    "Method": "VehicleAdvertsListByEmployee",
+    "RelativePath": "api/Vehicles/VehicleAdvertsListByEmployeeId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

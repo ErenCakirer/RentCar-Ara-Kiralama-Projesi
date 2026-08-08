@@ -1,0 +1,54 @@
+﻿@model List<RentCar_UI.Dtos.TestimonialDtos.ResultTestimonialDto>
+
+<section class="w3l-clients w3l-agency-test" id="testimonials" style="background: #f8f9fa; padding: 80px 0;">
+    <div class="container">
+
+        <div class="title-content text-center mb-5">
+            <h6 class="title-subhny" style="color: #ff5a3c; font-weight: 600; letter-spacing: 1px;">Müşteri Yorumları</h6>
+            <h3 class="title-w3l" style="font-weight: 700;">Sürücülerimiz Ne Diyor?</h3>
+        </div>
+
+        <div class="row justify-content-center g-5">
+
+            @if (Model != null && Model.Any())
+            {
+               
+
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    var item = Model[i];
+ 
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-5 px-3">
+                        <div class="testimonial-content" style="background: #fff; padding: 45px 40px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); text-align: center; height: 100%; border: 1px solid #eaedf1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div class="testimonial">
+
+                                
+
+                                <blockquote style="margin-bottom: 15px;">
+                                    <q style="font-size: 20px; font-weight: 600; color: #222; font-style: italic;">Harika Bir Deneyim!</q>
+                                </blockquote>
+
+                                <p style="font-size: 15.5px; line-height: 28px; color: #555; margin-bottom: 25px;">
+                                    @item.Comment
+                                </p>
+
+                                <div class="people-info" style="border-top: 1px solid #f1f3f5; padding-top: 20px; margin-top: auto;">
+                                    <h3 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 4px;">@item.NameSurname</h3>
+                                    <p class="identity" style="color: #ff5a3c; font-size: 14px; font-weight: 500; margin: 0;">@item.Title</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="text-center w-100">
+                    <p style="color: #666;">Henüz eklenmiş bir müşteri yorumu bulunmuyor.</p>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>

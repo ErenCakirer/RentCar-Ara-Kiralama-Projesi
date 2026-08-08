@@ -1,0 +1,137 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Estates-Starter/assets/css/style-starter.css">
+</head>
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("HeaderVC")
+    <div class="header-w3l">
+        <!-- header -->
+        @await Component.InvokeAsync("NavbarVC")
+        <!-- //header -->
+    </div>
+
+    <div class="w3l-innerblock"></div>
+
+    @RenderBody()
+
+    <!-- footer17 -->
+    <section class="footer-17">
+        <div class="footer17_sur py-5">
+            <div class="container py-lg-5 py-md-4">
+                <div class="footer17-top">
+                    <div class="footer17-top-left1_sur pr-lg-4">
+                        <h6>Bizle İletişime Geçin</h6>
+                        <p>Lorem ipsum dolor sit amet elit. Velit beatae ullam dolore.</p>
+                        <ul>
+                            <li><a href="mailto:support@Estates.com">destek@RentCar.com</a></li>
+                            <li><a href="tel:+(21) 255 989 8088">+(01) 234 567 99999</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer17-top-left2_sur">
+                        <h6>En Çok Merak Edilenler</h6>
+                        <ul>
+                            <li><a href="/Vehicle/Index">İlanlar</a></li>
+                            <li><a href="/About/Index">Hakkımızda</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer17-top-left4_sur">
+                        <h6>Bültenimize Abone Olun</h6>
+                        <p>En son ilanlar ve haberlerden haberdar olmak için e-postanızı girin.</p>
+
+                        <form action="#" method="post" class="subscribe mt-3" id="newsletterForm">
+                            <input type="email" name="Email" placeholder="E-posta adresiniz..." required="">
+                            <button type="submit" class="btn btn-style btn-primary"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <div class="container">
+                    <p class="copy-footer-29">
+                        © @DateTime.Now.Year RentCar. Tüm Hakları Saklıdır. | Designed by <a href="https://w3layouts.com" target="_blank">W3layouts</a>
+                    </p>
+                </div>
+            </div>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                &#10548;
+            </button>
+            <script>
+                window.onscroll = function () {
+                  scrollFunction()
+                };
+
+                function scrollFunction() {
+                  var btn = document.getElementById("movetop");
+                  if (btn) {
+                     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                       btn.style.display = "block";
+                     } else {
+                       btn.style.display = "none";
+                     }
+                  }
+                }
+
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </section>
+
+    <script src="/Estates-Starter/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/Estates-Starter/assets/js/theme-change.js"></script>
+
+    <script src="/Estates-Starter/assets/js/owl.carousel.js"></script>
+
+    <script>
+        $(function () {
+          $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+          })
+        });
+    </script>
+    <script>
+        $(window).on("scroll", function () {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+          } else {
+            $("#site-header").removeClass("nav-fixed");
+          }
+        });
+
+        $(".navbar-toggler").on("click", function () {
+          $("header").toggleClass("active");
+        });
+    </script>
+    <script src="/Estates-Starter/assets/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            if ($.isFunction($.fn.owlCarousel)) {
+                $("#owl-demo1").owlCarousel({
+                    loop: false, 
+                    nav: false,
+                    margin: 50,
+                    responsiveClass: true,
+                    responsive: {
+                        0: { items: 1, nav: false },
+                        736: { items: 1, nav: false } 
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

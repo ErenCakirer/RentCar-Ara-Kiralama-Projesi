@@ -1,0 +1,47 @@
+﻿@model List<RentCar_UI.Dtos.ServicesDtos.ResultServiceDto>
+
+<div class="w3l-agent-block py-5" id="why">
+    <div class="container py-lg-4">
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6">
+                <div class="agent-block-image px-lg-5 text-center">
+                    <img src="~/Estates-Starter/assets/images/range.png"
+                         class="img-fluid"
+                         alt="Rentli Segmentler"
+                         style="width:100%; max-width:none; height:auto;">
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5 pl-lg-5">
+                <h6 class="title-subhny">Segmentler</h6>
+
+                <h3 class="title-w3l">
+                    İhtiyacınıza Uygun Araç Türünü Seçin
+                </h3>
+
+                <p class="my-3">
+                    Yolculuk planınıza ve bütçenize en uygun araç kategorisini seçerek sürüş keyfini hemen başlatın.
+                    Şehir içi pratiklikten lüks konfora kadar her segmentte yanınızdayız.
+                </p>
+
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="subscribe-cat-gd">
+                                <a href="~/Estates-Starter/services.html" class="subscribe-cat-link">
+                                    @item.Title
+                                </a>
+
+                                <p class="mt-2">
+                                    @item.Description
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

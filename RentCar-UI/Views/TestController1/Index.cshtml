@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.SignalR
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <div class="alert alert-warning">
+                Bağlantı Durumu: <strong id="connstatus">Yükleniyor...</strong>
+            </div>
+        </div>
+        <div class="col-md-8 offset-2">
+            <div class="alert alert-primary">
+                Kategori Sayısı: <strong id="categorycount">Yükleniyor...</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(() => {
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl("https://localhost:7007/SignalRHub")
+                .build();
+
+            $("#connstatus").text(connection.state);
+
+            connection.on("ReceiveCategoryCount", (value) => {
+                console.log("SignalR'dan gelen veri:", value);
+                $("#categorycount").text(value);
+            });
+
+            connection.start().then(() => {
+                $("#connstatus").text(connection.state);
+
+                connection.invoke("SendCategoryCount");
+
+                setInterval(() => {
+                    connection.invoke("SendCategoryCount");
+                }, 2000);
+
+            }).catch((err) => {
+                console.log("SignalR Bağlantı Hatası:", err);
+                $("#connstatus").text("Bağlantı Hatası!");
+            });
+        });
+    </script>
+}

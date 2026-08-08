@@ -1,0 +1,52 @@
+﻿@model RentCar_UI.Dtos.ServicesDtos.UpdateServiceDto
+
+@{
+    ViewData["Title"] = "Hizmeti Güncelle";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4 justify-content-center">
+        <div class="col-sm-12 col-xl-8">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0 text-primary" style="font-size: 1.25rem;">
+                        <i class="fa fa-edit me-2"></i>Hizmet Bilgilerini Güncelle
+                    </h6>
+                    <a href="/Service/Index" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-arrow-left me-1"></i> Listeye Dön
+                    </a>
+                </div>
+
+                <form method="post" action="/Service/UpdateService">
+                    <input type="hidden" asp-for="ServiceID" />
+                    <div class="mb-3">
+                        <label for="Title" class="form-label text-dark fw-bold">Hizmet Başlığı</label>
+                        <input type="text" class="form-control" id="Title" asp-for="Title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Description" class="form-label text-dark fw-bold">Açıklama</label>
+                        <textarea class="form-control" id="Description" asp-for="Description" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label text-dark fw-bold d-block">Yayın Durumu</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Status" id="statusActive" value="true" @(Model?.Status == true ? "checked" : "")>
+                            <label class="form-check-input-label text-success fw-bold" for="statusActive">Aktif (Yayında)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Status" id="statusPassive" value="false" @(Model?.Status == false ? "checked" : "")>
+                            <label class="form-check-input-label text-danger fw-bold" for="statusPassive">Pasif (Gizli)</label>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-warning text-dark py-3 fw-bold">
+                            <i class="fa fa-sync me-2"></i>Değişiklikleri Kaydet
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

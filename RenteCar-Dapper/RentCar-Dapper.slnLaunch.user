@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "RentCar-DapperApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\RentCar-UI\\RentCar-UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

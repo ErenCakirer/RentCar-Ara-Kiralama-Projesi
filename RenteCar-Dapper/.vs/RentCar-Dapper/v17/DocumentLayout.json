@@ -1,0 +1,278 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Library Project\\RenteCar-Dapper\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\components\\adminlayoutsidebar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\vehicle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\components\\navbarvc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\components\\headervc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|d:\\library project\\rentecar-dapper\\dtos\\vehicledtos\\resultvehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|solutionrelative:dtos\\vehicledtos\\resultvehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\vehicle\\vehicledetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|d:\\library project\\rentecar-dapper\\repo\\vehiclerepo\\vehiclerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|solutionrelative:repo\\vehiclerepo\\vehiclerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|d:\\library project\\rentecar-dapper\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95E94F1-AC20-42DD-BE75-32354D72C6B7}|RentCar-DapperApi.csproj|solutionrelative:controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\defaultlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\components\\featurevc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\shared\\components\\faqvc\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E8BC90-A11C-4EAD-A515-CB7CAECB81A5}|..\\RentCar-UI\\RentCar-UI.csproj|d:\\library project\\rentcar-ui\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VehicleDetail.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Vehicle\\VehicleDetail.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Vehicle\\VehicleDetail.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Vehicle\\VehicleDetail.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Vehicle\\VehicleDetail.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAhwCYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T10:49:28.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Vehicle\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Vehicle\\Index.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Vehicle\\Index.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Vehicle\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwDQAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T10:26:48.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VehicleRepo.cs",
+              "DocumentMoniker": "D:\\Library Project\\RenteCar-Dapper\\Repo\\VehicleRepo\\VehicleRepo.cs",
+              "RelativeDocumentMoniker": "Repo\\VehicleRepo\\VehicleRepo.cs",
+              "ToolTip": "D:\\Library Project\\RenteCar-Dapper\\Repo\\VehicleRepo\\VehicleRepo.cs",
+              "RelativeToolTip": "Repo\\VehicleRepo\\VehicleRepo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T10:14:03.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\NavbarVC\\Default.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\Components\\NavbarVC\\Default.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\NavbarVC\\Default.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\Components\\NavbarVC\\Default.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T11:56:09.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\FeatureVC\\Default.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\Components\\FeatureVC\\Default.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\FeatureVC\\Default.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\Components\\FeatureVC\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T10:31:15.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DefaultLayout.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\DefaultLayout.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\DefaultLayout.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\DefaultLayout.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\DefaultLayout.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAjwCoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T10:10:45.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T10:10:02.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\FaqVC\\Default.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\Components\\FaqVC\\Default.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\FaqVC\\Default.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\Components\\FaqVC\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T10:08:59.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-28T10:20:49.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\About\\Index.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-02T11:52:12.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\AdminLayoutSidebar\\Default.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\Components\\AdminLayoutSidebar\\Default.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\AdminLayoutSidebar\\Default.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\Components\\AdminLayoutSidebar\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-28T09:57:45.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResultVehicleDto.cs",
+              "DocumentMoniker": "D:\\Library Project\\RenteCar-Dapper\\Dtos\\VehicleDtos\\ResultVehicleDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\VehicleDtos\\ResultVehicleDto.cs",
+              "ToolTip": "D:\\Library Project\\RenteCar-Dapper\\Dtos\\VehicleDtos\\ResultVehicleDto.cs",
+              "RelativeToolTip": "Dtos\\VehicleDtos\\ResultVehicleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T11:00:43.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\HeaderVC\\Default.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Shared\\Components\\HeaderVC\\Default.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Shared\\Components\\HeaderVC\\Default.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Shared\\Components\\HeaderVC\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T11:17:49.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VehiclesController.cs",
+              "DocumentMoniker": "D:\\Library Project\\RenteCar-Dapper\\Controllers\\VehiclesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VehiclesController.cs",
+              "ToolTip": "D:\\Library Project\\RenteCar-Dapper\\Controllers\\VehiclesController.cs",
+              "RelativeToolTip": "Controllers\\VehiclesController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T10:20:59.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehicleController.cs",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Controllers\\VehicleController.cs",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Controllers\\VehicleController.cs",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Controllers\\VehicleController.cs",
+              "RelativeToolTip": "..\\RentCar-UI\\Controllers\\VehicleController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T10:24:51.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Library Project\\RentCar-UI\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\RentCar-UI\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Library Project\\RentCar-UI\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "..\\RentCar-UI\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-23T11:39:45.405Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

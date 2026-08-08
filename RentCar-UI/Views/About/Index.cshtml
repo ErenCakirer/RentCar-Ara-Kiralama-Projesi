@@ -1,0 +1,136 @@
+﻿@model List<RentCar_UI.Dtos.AboutDto.ResultAboutDto>
+
+@{
+    ViewData["Title"] = "Hakkımızda";
+    Layout = "~/Views/Shared/DefaultLayout.cshtml";
+}
+
+<div class="w3l-innerblock">
+</div>
+<section class="w3l-content-4 py-5" id="ab">
+    <div class="content-4-main py-lg-5 py-md-4">
+        <div class="container">
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <div class="ab-info-in row align-items-center">
+                        <div class="ab-min-left col-lg-5 mb-lg-0 mb-4">
+                            <div class="title-content text-left">
+                                <h3 class="title-subhny">@item.SubTitle</h3>
+                                <h3 class="title-w3l pr-lg-5">@item.Title</h3>
+                            </div>
+                            <div class="mt-4">
+                                <img src="@item.ImageUrl" alt="@item.Title" class="img-fluid rounded shadow" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                            </div>
+                        </div>
+                        <div class="ab-min-right col-lg-7 pl-lg-5">
+                            <p class="my-3" style="white-space: pre-line; line-height: 1.8;">
+                                @item.Description
+                            </p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <h4 class="text-muted">Hakkımızda bilgisi bulunamadı.</h4>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<div class="w3l-agent-block py-5" id="why">
+    <div class="container py-lg-4">
+        <div class="row align-items-center mt-lg-5">
+            <div class="col-lg-6">
+                <div class="agent-block-image px-lg-5">
+                    <img src="~/assets/images/4.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5 pl-lg-5">
+                <h6 class="title-subhny">Vizyonumuz</h6>
+                <h3 class="title-w3l">Kaliteli ve Güvenli Araç Kiralama Deneyimi</h3>
+                <p class="my-3">
+                    Müşterilerimize en konforlu ve güvenilir sürüş deneyimini sunmak için filomuzu sürekli yeniliyor, geniş araç yelpazemizle her ihtiyaca yönelik çözümler üretiyoruz.
+                </p>
+                <a href="/Vehicle/Index" class="btn btn-style btn-primary mt-md-5 mt-4">Araçlarımızı İnceleyin <span class="fa fa-arrow-right ml-3"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="w3l-content-4 py-5" id="features">
+    <div class="content-4-main py-lg-5 py-md-4">
+        <div class="container">
+            <div class="title-content text-center">
+                <h3 class="title-subhny">Neden Bizi Seçmelisiniz?</h3>
+                <h3 class="title-w3l">Sizin İçin En İyi Hizmet Standartlarını Sunuyoruz.</h3>
+            </div>
+            <div class="content-info-in row pt-5">
+                <div class="content-left col-lg-4 mt-lg-0 mt-md-5 mt-3">
+                    <div class="content-4-main-gd">
+                        <div class="row content4-right-grids">
+                            <div class="col-sm-3 content4-right-icon">
+                                <div class="content4-icon icon-clr1">
+                                    <span class="fa fa-car"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 content4-right-info pl-4">
+                                <h6><a href="#url">Geniş Araç Filosu</a></h6>
+                                <p>Ekonomik sınıftan lüks segment araçlara kadar zengin filomuzla hizmetinizdeyiz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-left col-lg-4 mt-lg-0 mt-md-5 mt-3">
+                    <div class="content-4-main-gd">
+                        <div class="row content4-right-grids">
+                            <div class="col-sm-3 content4-right-icon">
+                                <div class="content4-icon icon-clr2">
+                                    <span class="fa fa-shield"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 content4-right-info pl-4">
+                                <h6><a href="#url">Güvenli Sürüş</a></h6>
+                                <p>Tüm araçlarımız periyodik olarak bakımdan geçirilir ve tam kaskoludur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-left col-lg-4 mt-lg-0 mt-md-5 mt-3">
+                    <div class="content-4-main-gd">
+                        <div class="row content4-right-grids">
+                            <div class="col-sm-3 content4-right-icon">
+                                <div class="content4-icon icon-clr3">
+                                    <span class="fa fa-headset"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 content4-right-info pl-4">
+                                <h6><a href="#url">7/24 Destek</a></h6>
+                                <p>Kiralama süresince ve sonrasında her türlü soru ve ihtiyacınızda yanınızdayız.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w3l-project py-5">
+    <div class="container py-md-5 py-sm-4 py-2">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="bottom-info">
+                    <div class="header-section">
+                        <h3 class="title-w3l two">Aracınızı Hemen kiralayın</h3>
+                        <p class="mt-3 pr-lg-5">En uygun fiyatlar ve esnek kiralama koşulları ile yolculuğunuza hemen başlayın.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 align-self text-lg-right">
+                <a href="~/Contact/Index" class="btn btn-style btn-primary mt-lg-0 mt-md-5 mt-4">Bize Ulaşın <span class="fa fa-arrow-right ml-3"></span></a>
+            </div>
+        </div>
+    </div>
+</section>

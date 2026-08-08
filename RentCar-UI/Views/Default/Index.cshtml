@@ -1,0 +1,14 @@
+﻿w
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/DefaultLayout.cshtml";
+}
+@await Component.InvokeAsync("FeatureVC")
+
+@await Component.InvokeAsync("ServiceVC")
+@await Component.InvokeAsync("WhoWeAreVC")
+@await Component.InvokeAsync("ListingsVC")
+@await Component.InvokeAsync("NewsVC")
+@await Component.InvokeAsync("FaqVC")
+@await Component.InvokeAsync("TestimonialVC")
+

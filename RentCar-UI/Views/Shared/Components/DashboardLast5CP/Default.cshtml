@@ -1,0 +1,52 @@
+﻿@model List<RentCar_UI.Dtos.VehicleDtos.ResultVehicleDto>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Son Eklenen 5 Araç</h6>
+            <a href="/Vehicle/Index">Tümünü Göster</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-dark">
+                        <th scope="col">Görsel</th>
+                        <th scope="col">Araç Başlığı</th>
+                        <th scope="col">Günlük Fiyat</th>
+                        <th scope="col">Şehir</th>
+                        <th scope="col">İlçe</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="@item.CoverImage" alt="@item.title" style="width:60px; height:40px; object-fit:contain;" />
+                                </td>
+                                <td><strong>@item.title</strong></td>
+                                <td class="text-primary font-weight-bold">@item.price.ToString("N0") ₺</td>
+                                <td>@item.city</td>
+                                <td>@item.district</td>
+                                <td>
+                                    <a class="btn btn-sm btn-primary" href="/Vehicle/VehicleDetail/@item.productID">Detay</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center text-muted py-3">
+                                Listelenecek araç verisi bulunamadı veya API'ye bağlanılamadı.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
